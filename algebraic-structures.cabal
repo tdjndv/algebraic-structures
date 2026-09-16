@@ -1,0 +1,19 @@
+cabal-version:      3.16
+name:               algebraic-structures
+version:            0.1.0.0
+license:            MIT
+author:             Tengda Jiang
+build-type:         Simple
+extra-doc-files:    README.md
+
+library
+    ghc-options:      -Wall  
+    import:           warnings
+    hs-source-dirs:   src
+    default-language: GHC2021
+    build-depends:
+        base ^>=4.20.2.0,
+        deepseq,
+    exposed-modules:  
+        BinaryTree,
+        Graph,
